@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UV App</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div id="uv-container">
+        <h1>UV Information</h1>
+        <p>UV Index: <%= UV.result.uv %></p>
+        <p>UV Time: <%= UV.result.uv_time %></p>
+        <p>Maximum UV Index: <%= UV.result.uv_max %></p>
+        <p>Maximum UV Time: <%= UV.result.uv_max_time %></p>
+        <p>Ozone: <%= UV.result.ozone %></p>
+        <p>Ozone Time: <%= UV.result.ozone_time %></p>
+        <p>Safe Exposure Time - ST1(Very fair skin): <%= UV.result.safe_exposure_time.st1 %></p>
+        <p>Safe Exposure Time - ST3(Fair skin): <%= UV.result.safe_exposure_time.st3 %></p>
+        <p>Safe Exposure Time - ST5(Brown skin): <%= UV.result.safe_exposure_time.st5 %></p>
+        <!-- Diğer safe exposure time değerlerini de istediğiniz gibi ekleyebilirsiniz -->
+        <p>Solar Noon: <%= UV.result.sun_info.sun_times.solarNoon %></p>
+        <p>Sunrise: <%= UV.result.sun_info.sun_times.sunrise %></p>
+        <p>Sunset: <%= UV.result.sun_info.sun_times.sunset %></p>
+        <!-- Diğer güneş zamanlarını da istediğiniz gibi ekleyebilirsiniz -->
+    </div>
+</body>
+
+
+<footer>Nasuhcan Durmaz</footer>
+</html>
